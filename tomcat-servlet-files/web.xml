@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+  version="4.0"
+  metadata-complete="true">
+
+    <description>
+      Bank Account servlet
+    </description>
+    <display-name>Book Loans Servlet</display-name>
+
+    <request-character-encoding>UTF-8</request-character-encoding>
+
+    
+    <servlet>
+      <servlet-name>AllLoans</servlet-name>
+      <servlet-class>AllLoans</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>AllLoans</servlet-name>
+        <url-pattern>/AllLoans</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+      <servlet-name>Dispatch</servlet-name>
+      <servlet-class>Dispatch</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>Dispatch</servlet-name>
+        <url-pattern>/Dispatch</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+      <servlet-name>ReturnABook</servlet-name>
+      <servlet-class>ReturnABook</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>ReturnABook</servlet-name>
+        <url-pattern>/ReturnABook</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+      <servlet-name>ListDB</servlet-name>
+      <servlet-class>ListDB</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>ListDB</servlet-name>
+        <url-pattern>/ListDB</url-pattern>
+    </servlet-mapping>
+    
+         <servlet>
+      <servlet-name>BorrowerSupport</servlet-name>
+      <servlet-class>BorrowerSupport</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>BorrowerSupport</servlet-name>
+        <url-pattern>/BorrowerSupport</url-pattern>
+    </servlet-mapping>
+    
+             <servlet>
+      <servlet-name>VerifyBorrower</servlet-name>
+      <servlet-class>VerifyBorrower</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>VerifyBorrower</servlet-name>
+        <url-pattern>/VerifyBorrower</url-pattern>
+    </servlet-mapping>
+    
+        <servlet-mapping>
+        <servlet-name>BorrowerSupport</servlet-name>
+        <url-pattern>/BorrowerSupport</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+      <servlet-name>BorrowerLoggedInPage</servlet-name>
+      <servlet-class>BorrowerLoggedInPage</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>BorrowerLoggedInPage</servlet-name>
+        <url-pattern>/BorrowerLoggedInPage</url-pattern>
+    </servlet-mapping>
+    
+        <servlet>
+      <servlet-name>ViewCart</servlet-name>
+      <servlet-class>ViewCart</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>ViewCart</servlet-name>
+        <url-pattern>/ViewCart</url-pattern>
+    </servlet-mapping>
+    
+           <servlet>
+      <servlet-name>CheckoutCart</servlet-name>
+      <servlet-class>CheckoutCart</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>CheckoutCart</servlet-name>
+        <url-pattern>/CheckoutCart</url-pattern>
+    </servlet-mapping>
+    
+               <servlet>
+      <servlet-name>Logout</servlet-name>
+      <servlet-class>Logout</servlet-class>
+    </servlet>
+   
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+
+</web-app>
