@@ -21,6 +21,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -68,14 +69,14 @@ public class CheckoutCart extends HttpServlet {
 			Cart cart = (Cart) session.getAttribute("Cart");
 
 			// get the list of books from the cart
-			ArrayList<Book> booksToCheckout = cart.getBooks();
+			ArrayList<cart.Book> booksToCheckout = (ArrayList)cart.getBooks();
 
 			// create lists to hold available and unavailable books
 			ArrayList<String> unavailableBooks = new ArrayList<String>();
-			ArrayList<Book> availableBooks = new ArrayList<Book>();
+			ArrayList<cart.Book> availableBooks = new ArrayList<cart.Book>();
 
 			// for each book in the cart
-			for (Book book : booksToCheckout) {
+			for (cart.Book book : booksToCheckout) {
 
 				// look for an available copy in the database and store its BookNo
 				int availableCopyNo = checkAvailability(out, book);
@@ -134,7 +135,7 @@ public class CheckoutCart extends HttpServlet {
 	 * @param out  PrintWriter
 	 * @param book String book title to be checked for availability in the database
 	 */
-	public int checkAvailability(PrintWriter out, Book book) {
+	public int checkAvailability(PrintWriter out, cart.Book book) {
 
 		int availableCopy = 0;
 		Connection con = DatabaseAccess.getDatabaseConnection(out);
@@ -209,7 +210,7 @@ public class CheckoutCart extends HttpServlet {
 	 *                       been found in the database
 	 * @param borrower       The borrower who is trying to loan the book
 	 */
-	private void createLoanRecords(PrintWriter out, ArrayList<Book> availableBooks, LoggedInBorrower borrower) {
+	private void createLoanRecords(PrintWriter out, ArrayList<cart.Book> availableBooks, LoggedInBorrower borrower) {
 
 		// get a connection to the database
 		Connection con = DatabaseAccess.getDatabaseConnection(out);
@@ -217,7 +218,7 @@ public class CheckoutCart extends HttpServlet {
 		try {
 			Statement stmt = con.createStatement();
 
-			for (Book book : availableBooks) {
+			for (cart.Book book : availableBooks) {
 				// create an update statement
 				String updateString = "INSERT INTO Loan  " + "VALUES(?,?,?,?,?)";
 
