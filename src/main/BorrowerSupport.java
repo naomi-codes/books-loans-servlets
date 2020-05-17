@@ -16,7 +16,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-import borrower.LoggedInBorrower;
+import user.LoggedInBorrower;
 
 @WebServlet("/BorrowerSupport")
 public class BorrowerSupport extends HttpServlet {

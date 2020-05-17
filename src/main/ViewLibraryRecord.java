@@ -10,7 +10,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-import borrower.LoggedInBorrower;
+import user.LoggedInBorrower;
 
 import java.sql.*; // for JDBC
 

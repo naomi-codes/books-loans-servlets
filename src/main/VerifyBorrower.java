@@ -23,7 +23,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
-import borrower.LoggedInBorrower;
 
 @WebServlet("/VerifyBorrower")
 public class VerifyBorrower extends HttpServlet {

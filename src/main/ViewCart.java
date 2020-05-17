@@ -19,6 +19,7 @@ import javax.servlet.http.HttpSession;
 
 import cart.Book;
 import cart.Cart;
+import user.LoggedInBorrower;
 
 @WebServlet("/ViewCart")
 public class ViewCart extends HttpServlet {
