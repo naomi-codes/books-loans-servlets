@@ -1,11 +1,16 @@
 # books-loans-servlets
 This project demonstrates a Tomcat 8.5 web application.
 
-## Requirements
+## Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+* You have installed the latest version of MySql(https://dev.mysql.com/downloads/mysql/). 
+* You have installed at least version 8.5 of Apache Tomcat (https://tomcat.apache.org/download-80.cgi).
 
 ## Installation
 
-Download the zip file and place in your desired location on your hard drive. Unzip the file to deploy.
+Download the zip file and open the java-src directory in your chosen IDE for builds.
+Deploy and rename the tomcat-deployment directory
 
 ## Usage
 
