@@ -1,5 +1,7 @@
 # books-loans-servlets
-A book borrowing example of a Tomcat web app.
+This project demonstrates a Tomcat 8.5 web application.
+
+## Requirements
 
 ## Installation
 
