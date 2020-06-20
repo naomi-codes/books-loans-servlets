@@ -10,7 +10,12 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 Download the zip file and open the java-src directory in your chosen IDE for builds.
-Deploy and rename the tomcat-deployment directory
+Deploy and rename the tomcat-deployment directory. 
+I prefer to use php my admin for MySQL database management however you can use the command line to populate your
+database with the commands given in the file Setup.SQL
+
+It will also be necessary to update set up method calls within the DatabaseAccess.java file.
+
 
 ## Usage
 
