@@ -16,7 +16,7 @@ database with the commands given in the file Setup.SQL
 
 It will also be necessary to update set up method calls within the DatabaseAccess.java file.
 
-![screenshot of DatabaseAccess.java](admin/images/DatabaseAccess.java.png)
+![screenshot of DatabaseAccess.java | 200x150](admin/images/DatabaseAccess.java.png)
 
 ## Usage
 
