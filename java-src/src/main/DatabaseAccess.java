@@ -32,13 +32,13 @@ public class DatabaseAccess {
 		}
 
 		Connection con = null;
-		String url = "jdbc:mysql://localhost:3306/yd_assignment";
+		String url = "jdbc:mysql://localhost:3306/bookloans";
 
 		String username = null;
 		String password = null;
 
 		try {
-			String authFileName = "/Users/zee/apache-tomcat-8.5.50/webapps/ydass/auth.txt";
+			String authFileName = "./auth.txt";
 
 			// set a reader for the file with db user details
 			BufferedReader userPassIn = new BufferedReader(new FileReader(authFileName));
