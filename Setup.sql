@@ -1,5 +1,5 @@
 -- SQL to (re)build the MySQL tables for the
---   CSCU9YD library assignment
+--   books-loans-servlets db
 -- and to populate with some initial data
 
 DROP TABLE Loan ;
@@ -17,8 +17,8 @@ CREATE TABLE Book
    Title       VARCHAR(40)) ;
 
 CREATE TABLE Loan
-  (BorrowerNo  INT REFERENCES Borrower,
-   BookNo      INT REFERENCES Book,
+  (BorrowerNo  INT REFERENCES Borrower(BorrowerNo),
+   BookNo      INT REFERENCES Book(BookNo),
    Date_out    DATE,
    Dispatched  CHAR(1) DEFAULT 'N',
    Date_back   DATE) ;
@@ -45,4 +45,3 @@ INSERT INTO Loan (BorrowerNo, BookNo, Date_out, Dispatched)
 INSERT INTO Loan (BorrowerNo, BookNo, Date_out, Dispatched) 
                  VALUES (123,654,'2019-09-25','N') ;
 
-COMMIT ;
