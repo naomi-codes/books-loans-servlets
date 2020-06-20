@@ -1,5 +1,5 @@
 # books-loans-servlets
-This project demonstrates a Tomcat 8.5 web application.
+This project demonstrates a Tomcat 8.5 web application in the form of a book borrowing system.
 
 ## Prerequisites
 
