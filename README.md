@@ -20,10 +20,8 @@ It will also be necessary to update set up method calls within the DatabaseAcces
 
 ## Usage
 
-```
-[-s] [sampleRate] input_filename outputfile_filename_stem
-```
-
+After the package has been successfully deployed via Tomcat and the server has been refreshed the servlets homepage LibraryLinks.html
+will be accessible via your localhost at whichever port your Tomcat if congifured to listen to for requests.
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
